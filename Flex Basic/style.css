@@ -1,0 +1,33 @@
+body {
+  font-size: 45px;
+}
+.parent {
+  background: blue;
+  padding: 10px;
+  /* flex */
+  display: flex;
+  min-height: 60vh;
+  gap: 10px;
+  flex-direction: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: row-reverse; */
+}
+.parent div {
+  background: gray;
+  width: 70px;
+  height: 70px;
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent div:nth-child(odd) {
+  background: red;
+}
+.item-5 {
+  align-self: flex-end;
+}
+.item-4 {
+  order: -1;
+}
